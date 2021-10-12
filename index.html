@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class = "header">Book Library</h1>
+        <p class = "header">My version of the Library for The Odin Project</p>
+        <form id = "libraryAdd" action="" method="get" class="form">
+            <div class="formItems">
+              <label>Book Title:</label>
+              <input type="text" id="title" required>
+            </div>
+            <div class="formItems">
+              <label for="email">Author: </label>
+              <input type="text" id="author" required>
+            </div>
+            <div class="formItems">
+                <label for="email">Read? </label>
+                <select id="readstatus" name="readstatus">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+              </div>
+            <div class="formItems">
+              <input id = "addbutton"type ="submit" value="Add New Book">
+            </div>
+          </form>
+            <br><br>
+        <div id = "library-Disp">
+          <h3>Book Catalog</h3>
+          <table id= "display-Lib-Table">
+            </table>
+        </div>  
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
