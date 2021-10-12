@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
+    background: url("/imagebooks.jpg") top center;
+=======
     background: url('imagebooks.jpg') top center;
+>>>>>>> d3fd2abbe27a167657b697cca3cdd4d7eea679e2
 }
 
 .header{

@@ -10,13 +10,12 @@ let myLibrary = [
   read: "no"}
 ];
 
-const formSubmit = document.getElementById("libraryAdd");
+const formSubmit = document.getElementById("libraryAdd");   //constant declarations for dynamic elements.
 const titleSubmission = document.getElementById('title');
 const authorSubmission = document.getElementById('author');
 const readValueSubmission = document.getElementById('readstatus');
 const displayLib = document.getElementById('display-Lib-Table');
-let butDel="";
-let butCh = "";
+let butDel="";  //empty string placeholder for delete function;
 const displayLibDisp = displayLib.innerHTML;
 let tableTopCreator = `<tbody><tr id="table-header"><th>Title</th><th>Author</th><th>Read</th><th>Delete</th></tr>`;
 let tableEnd = `</tbody>`
@@ -86,15 +85,15 @@ function changeTextFun(){
       readStatusChanger(testing);
     })
   })
-  }
+  };
 
 function libraryTableCreator(){
   libTabClear();
   let copymyLib = myLibrary.slice();
   let begOfTable = '<tr class="table-cells"><td>'
   let tableBr = '</td><td>'
-  let buttonStart = '<button type = "button"'
-  let buttonEnd = '>Delete</button></td></tr>';
+  let buttonStart = '<button type = "button"'        //this builds the table by concatanating a bunch of strings that get inserted
+  let buttonEnd = '>Delete</button></td></tr>';       // into the displayLib element selected above.
   let changeTextStart = '<p data-change="change"'
   let changeTextEnd = ' class = "changeText">Change</p>'
   let tableHTML="";
@@ -113,7 +112,7 @@ function libraryTableCreator(){
   libraryTabDeletor(butVal);                                      //creates the table,  buttons seem to always work. 
   });
 });
-changeTextFun();                  //need to call this function to activate event listeners on change text.
+ changeTextFun();                  //need to call this function to activate event listeners on change text yesno in table.
 };
 
 function libraryTabDeletor(x){
