@@ -1,9 +1,5 @@
 body{
-<<<<<<< HEAD
-    background: url("/imagebooks.jpg") top center;
-=======
     background: url('imagebooks.jpg') top center;
->>>>>>> d3fd2abbe27a167657b697cca3cdd4d7eea679e2
 }
 
 .header{
@@ -53,10 +49,18 @@ p{
 
 .table-cells{
     font-family: 'Work Sans', sans-serif;
-    background-color: #d2e4b0da;
+    background-color:#d2e4b0da;
     border-radius: 20px;
 }
 
+.changeText{
+  font-family: 'Work Sans', sans-serif;
+  background-color: #684b3093;
+}
+
+tr{
+  border-top: 3px solid black ;
+}
 
 table {
     text-align: center;
